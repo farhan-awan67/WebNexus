@@ -30,7 +30,7 @@ const HeroSec = () => {
           </div>
         </div>
         <div className="w-full md:basis-[50%] object-fit">
-          <img className="" loading="lazy" src={heroImg} alt="hero img" />
+          <img src={heroImg} alt="hero img" />
         </div>
         <div className="w-full md:basis-[25%] order-2 md:order-none">
           <p className="text-[17px] w-full text-start leading-normal tracking-normal">

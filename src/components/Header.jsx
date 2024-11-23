@@ -71,8 +71,8 @@ const Header = () => {
         className={`fixed top-[60px] left-0 gap-6 bg-gradient-to-b from-[#181818] to-[#333333] flex-col justify-center items-center w-full p-3 h-1/2 ${
           menu
             ? "flex opacity-100 transform translate-y-0"
-            : "hidden opacity-0 transform translate-y-10"
-        } sm:hidden transition-top duration-300 ease-in-out`}
+            : "opacity-0 transform translate-y-10"
+        } sm:hidden transition-transform duration-300 ease-in-out`}
       >
         <a className="text-[20px] font-normal hover:text-[#FF0080]" href="#">
           Home
