@@ -68,11 +68,11 @@ const Header = () => {
       </button>
       {/* side abr */}
       <div
-        className={`fixed top-[60px] left-0 gap-6 bg-gradient-to-b from-[#181818] to-[#333333] flex-col justify-center items-center w-full p-3 h-1/2 ${
+        className={`fixed left-0 gap-6 bg-gradient-to-b from-[#181818] to-[#333333] flex-col justify-center items-center w-full p-3 h-1/2 ${
           menu
-            ? "flex opacity-100 transform translate-y-0"
-            : "opacity-0 transform translate-y-10"
-        } sm:hidden transition-transform duration-300 ease-in-out`}
+            ? "flex top-[60px] opacity-100 transform" // Visible and at top 60px when menu is open
+            : "top-[-100%] opacity-0 transform" // Out of view and hidden when menu is closed
+        } sm:hidden transition-all duration-300 ease-in-out`}
       >
         <a className="text-[20px] font-normal hover:text-[#FF0080]" href="#">
           Home
